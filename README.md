@@ -1,32 +1,60 @@
-# About
+# stepbystep  
+A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
 
-This is my blog based on jekyll. And I change the style and interactive. If you want to use this model of the blog. **Please give a star at this repository**. Then you can clone it as your blog model.
+## Preview
+#### PC or Pad
+<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
+#### Mobile
+<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
+</div>
 
-You can visit [here](http://gaohaoyang.github.io) to see this blog.
+## Feature  
 
----
+1. Compatible with PC iPad and Phone (RWD)
+2. Support blogger mood-talk(说说)
+3. Support post subdirs as post categories  
+  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
 
-这是我的博客，基于 jekyll。我改了所有默认的样式和交互。如果你想使用这个博客模板。**请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。然后你可以克隆这个仓库用作你自己的博客。
+## Install
+assume the github username is "hello" then:  
 
-博客访问地址：[点击这里](http://gaohaoyang.github.io)
+1. create a repository named "hello.github.io"  
+2. clone this repository  
+  `git clone https://github.com/jokinkuang/stepbystep.git`  
+3. push the whole thing to your repo "hello.github.io"  
+  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
+  `git push origin master`  
+4. browse "hello.github.io"  
 
-**使用时请注明模板来源:  Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+> if your github username is "world" then replace upper "hello" all to "world"  
 
-<!--
+## Custom Domain  
+if you want to visit "www.hello.com" instead of "hello.github.io" then:  
 
-## 被引用信息
+1. create a file named "CNAME" (the file is already exist)  
+2. buy the "www.hello.com" domain  
+3. add following to the "CNAME"  
+  `www.hello.com`  
+4. go to the Shop where your domain bought and set the Domain DNS to:  
+  | prefix | record-type |      host       |  
+  |   www  |   CNAME     | hello.github.io |  
+5. wait a long long time  
+6. browse "www.hello.com"
 
-使用了我的模板并写明来源的人：   
+## Custom Your Site  
+1. you need a [duoshuo](www.duoshuo.com) account  
+2. you need a [google-analytics](https://www.google.com/analytics/) account  
+3. all settings are in `_config.yml` 
 
-* [dreamholy](http://dreamholy.github.io/)
+## Other  
+whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
 
-没有注明来源的人：
+## How It works  
+[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
+[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
 
-* [yangshuailing](http://yangshuailing.github.io/com/)
-* [huapu728](http://huapu728.github.io/)
-* [greatbuger](http://greatbuger.github.io/) 
-
-
--->
-
+## License  
+Under The [MIT](https://tldrlegal.com/license/mit-license) License
 
