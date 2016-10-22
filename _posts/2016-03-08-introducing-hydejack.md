@@ -1,6 +1,11 @@
-# Hydejack
+---
+layout: post
+title: Introducing Hydejack
+tags: [hyde]
+description: >
+  Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com) theme, stolen by [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
 
-Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com) theme, stolen by [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).
+---
 
 ## Features
 Unlike Hyde, it's very opinionated about how you are going to use it.
@@ -48,7 +53,7 @@ color: '#949667'
 ~~~
 
 ### How to Add a New Tag
-Tags are possible, but they are not meant to be used #instagram #style: #food #goodfood #happy #happylife #didimentionfood #yougetthepoint. Each tag requires some setup work. I tend to think of it as categories that can be combined.
+Tags are not meant to be used #instagram #style: #food #goodfood #happy #happylife #didimentionfood #yougetthepoint, as each tag requires some setup work. I tend to think of it as categories that can be combined.
 
 1.  Add an entry to `_data/tags.yml`, where the key represents a slug and provide at least a `name` value and optionally `image`, `color` and `description`.
 
