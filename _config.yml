@@ -24,7 +24,7 @@ description:         >
    I'm trying，Be a tester！
 
 # The tags listed as entries in the sidebar
-sidebar_tags:        [AutoTest, Performance]
+sidebar_tags:        [AutoTest,FunctionTest,Performance]
 
 # Fallback image and color if not overwritten for tag or post
 image:               /bluewangw.github.io/public/img/nap.jpg
