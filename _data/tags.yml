@@ -16,11 +16,11 @@ AutoTest:
   image: /bluewangw.github.io/public/img/hyde.jpg
   color: '#949667'
   description: >
-    自动化测试列表
+    UI、接口、单元测试自动化学习
 
 Performance:
   name: 性能测试
   image: /bluewangw.github.io/public/img/jekyll.jpg
   color: '#949667'
   description: >
-    性能测试列表
+    性能测试学习
