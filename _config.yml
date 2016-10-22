@@ -17,7 +17,7 @@ title:               BlueWang
 
 # Pagination
 paginate:            10
-paginate_path:       '/page-:num/'
+paginate_path:       '/page:num/'
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:         >
@@ -92,6 +92,11 @@ google_analytics_id: 'UA-84025722-2'
 
 # Setting a disqus subdomain will enable the comment section
 # disqus:            <username>
+# Comment setting
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : bluewang //替换为你刚刚注册的短名
 
 kramdown:
   math_engine:       mathjax
