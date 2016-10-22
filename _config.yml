@@ -16,7 +16,7 @@ baseurl:             ''
 title:               BlueWang
 
 # Pagination
-paginate:            5
+paginate:            10
 paginate_path:       '/page-:num/'
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
