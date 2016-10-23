@@ -40,8 +40,8 @@ author:
   name:              'Blue Wang'
 
   # This photo will be used in the about section
-  photo:             http://note.youdao.com/yws/api/personal/file/63B9D72075184F5B92C9BF065CCD832E?method=download&inline=true&shareKey=c9420609caa0a1e48098725912fc8937
-  photo2x:           http://note.youdao.com/yws/api/personal/file/63B9D72075184F5B92C9BF065CCD832E?method=download&inline=true&shareKey=c9420609caa0a1e48098725912fc8937
+  photo:             http://qwtel.com/public/img/flo.jpg
+  photo2x:           http://qwtel.com/public/img/flo@2x.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: 
