@@ -1,4 +1,12 @@
-<!-- 多说评论框 start -->
+
+{% assign post = include.post %}
+
+<aside class="comments" role="complementary">
+  <h2>Comments</h2>
+
+  <div id="disqus_thread"></div>
+
+  <!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="https://bluewangw.github.io/{{ page.url }}"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
@@ -14,3 +22,4 @@ var duoshuoQuery = {short_name:"bluewang"};
 	})();
 	</script>
 <!-- 多说公共JS代码 end -->
+</aside>
