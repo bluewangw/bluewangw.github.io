@@ -40,8 +40,8 @@ author:
   name:              'Blue Wang'
 
   # This photo will be used in the about section
-  photo:             http://note.youdao.com/noteshare?id=d2c7cc4236723d295c887fcab66d35af
-  photo2x:           http://note.youdao.com/noteshare?id=d2c7cc4236723d295c887fcab66d35af
+  photo:             /bluewangw.github.io/public/img/myphoto.jpg
+  photo2x:           /bluewangw.github.io/public/img/myphoto.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: 
