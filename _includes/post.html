@@ -34,17 +34,10 @@
   {% endif %}
 
   <hr/>
-
-  {{ post.content }}
-  
-  {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}.html">{{ post.title }}</a></h1>
-  <div class="content">
-    {{ post.content  || split:'<!--break-->' | first }}
-    <footer>
-      <a class="morebox" href="{{ post.url }}.html">Read More →</a>
-      <hr size="6px" color="#4285F4">
-    </footer>
-  </div>
-{% endfor %}
+  { % if post.content contains "<!-- more -->" %}
+  { { post.content | split:"<!-- more -->" | first % }}
+  <h4><a href='{ {post.url}}' title='Read more...'>阅读全文</a></h4>
+  { % else %}
+  { { post.content}}
+  { % endif %}
 </article>
