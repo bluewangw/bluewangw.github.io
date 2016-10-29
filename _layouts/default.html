@@ -11,8 +11,7 @@ layout: compress
     {% include menu.html %}
 
     <main class="content container" role="main">
-      {{post.content ||split:'<!-- more -->' | first }}
-     <h7><a href='{{post.url}}' title='阅读全文'>阅读全文</a></h7>
+      {{ content }}
     </main>
 
     {% include sidebar.html %}
