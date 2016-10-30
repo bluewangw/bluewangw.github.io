@@ -12,7 +12,7 @@ layout: compress
 
     <main class="content container" role="main">
 
-      {% if post.content contains "<!-- more -->" %}
+      {% if content contains "<!-- more -->" %}
       {{ content | split:"<!-- more -->" | first %}}
       <h4><a href='{{post.url}}' title='Read more...'>Read more...</a></h4>
       {% else %}
