@@ -11,19 +11,7 @@ layout: compress
     {% include menu.html %}
 
     <main class="content container" role="main">
-    
-      {% if content contains "<!-- more -->" %}
-      
-      {{ content | split:"<!-- more -->" | first %}}
-      
-       <h4><a href='{{post.url}}' title='Read more...'>Read more...</a></h4>
-      
-      {% else %}
-		
-       {{ content }}
-	  
-      {% endif %}
-    
+     {{ content }}
     </main>
 
     {% include sidebar.html %}
