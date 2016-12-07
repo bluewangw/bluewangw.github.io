@@ -6,7 +6,7 @@ layout: default
   {% include post.html post=post link_title=true %}
   {% if post.content contains "<!-- more -->" %}
   {{ post.content | split:"<!-- more -->" | first }}
-  <h4><a href='{{post.url}}' title='Read more...'>Read more...</a></h4>
+  <h7><a href='{{post.url}}' title='阅读全文'>阅读全文</a></h7>
   {% else %}
   {{ post.content }}
  {% endif %}
