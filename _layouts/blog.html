@@ -4,11 +4,12 @@ layout: default
 
 {% for post in paginator.posts %}
   {% include post.html post=post link_title=true %}
-   {{ post.content  || split:'<!--break-->' | first }}
-    <footer>
-      <a class="morebox" href="{{ post.url }}.html">Read More →</a>
-      <hr size="6px" color="#4285F4">
-    </footer>
+  { % if post.content contains "<!-- more -->" %}
+  { { post.content | split:"<!-- more -->" | first % }}
+  <h4><a href='{ {post.url}}' title='Read more...'>Read more...</a></h4>
+  { % else %}
+  { { post.content}}
+ { % endif %}
   
   <br/>
 {% endfor %}
