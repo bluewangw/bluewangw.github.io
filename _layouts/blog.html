@@ -6,9 +6,12 @@ layout: default
   {% include post.html post=post link_title=true %}
   {% if post.content contains "<!-- more -->" %}
   {{ post.content | split:"<!-- more -->" | first }}
-  <h7><a href='{{post.url}}' title='阅读全文'>阅读全文</a></h7>
+  <br/>
+  <h7><a href='{{post.url}}' title='阅读全文'>......阅读全文</a></h7>
+  <br/>
   {% else %}
   {{ post.content }}
+  <br/>
  {% endif %}
   
   <br/>
