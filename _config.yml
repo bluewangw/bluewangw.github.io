@@ -17,7 +17,7 @@ title:               BlueWang
 
 # Pagination
 paginate:            5
-paginate_path:       "blog/page:num"
+paginate_path:       "page:num"
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
 description:         >
