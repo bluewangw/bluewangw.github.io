@@ -48,7 +48,7 @@ Then  搜索结果: selenium显示出来
 public class SearchStepdefs {
     private Search search = null;
     private String result = null;
-    @Given("^打开http://www.so.com/$") 
+    @Given("^打开http://baidu.com/$") 
     public void open(){
     search = new Search();
     search.open();
@@ -73,7 +73,7 @@ public class Search {
 	//初始化浏览器操作
 	public void setUp() {
 		driver = new FirefoxDriver();
-		baseUrl = "http://www.so.com/";
+		baseUrl = "http://baidu.com/";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
@@ -89,14 +89,14 @@ public class Search {
 		String result = null;
 		WebElement element = null;
 
-		driver.findElement(By.name("q")).clear();
-		driver.findElement(By.name("q")).sendKeys(keyword);
-		driver.findElement(By.id("search-button")).click();
+		driver.findElement(By.id("kw")).clear();
+		driver.findElement(By.id("kw")).sendKeys(keyword);
+		driver.findElement(By.id("su")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		element = driver.findElement(By.id("first"));
-		if (element.getText().contains("cucumber")) {
-			result = "cucumber";
+		element = driver.findElement(By.id("kw"));
+		if (element.getText().contains("selenium")) {
+			result = "selenium";
 		}
 		quit();
 		return result;
